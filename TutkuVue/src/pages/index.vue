@@ -1,3 +1,24 @@
+<script setup lang="ts">
+import slider from '@/components/slider.vue';
+import card from '@/components/card.vue';
+import infoCard from '@/components/infoCard.vue';
+</script>
+
 <template>
-  <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quam ea tenetur itaque explicabo reprehenderit obcaecati. Quisquam fugit porro nulla laudantium dicta iste distinctio mollitia similique modi id veniam fugiat recusandae, officia non dolor ratione explicabo. Inventore doloremque, ea unde sequi nulla officia explicabo blanditiis! Nesciunt architecto obcaecati tempora ipsum adipisci quas placeat ea at, quasi non incidunt hic tempore. Voluptatem cum voluptates beatae exercitationem necessitatibus aperiam, dolores natus repudiandae aliquam, molestias quisquam corrupti perspiciatis commodi dignissimos? Dolorem ipsa perferendis odit distinctio porro cum eum architecto fugiat natus obcaecati reprehenderit nobis, magni excepturi quas cumque, rem ab illo deserunt molestias quae. Maxime deserunt dicta vero harum explicabo accusantium doloremque corrupti tempora vel assumenda necessitatibus eos, et expedita molestiae debitis? Tempore vitae fugit, veritatis rerum vel esse quo velit odio. Eius perferendis repellat culpa. Quasi minus eius ipsum sequi quod incidunt voluptatibus, reiciendis iusto mollitia, officiis laborum asperiores id aliquid inventore quibusdam explicabo facere beatae commodi eos expedita minima. Culpa pariatur, beatae sapiente, perferendis aliquid accusantium eligendi non officia ducimus eos ipsa incidunt voluptates reprehenderit fugit a rerum? Impedit recusandae ipsa perspiciatis, expedita ipsum autem laboriosam, at nesciunt debitis rem optio iure aliquid illum, aliquam esse adipisci sit nostrum dignissimos? Dolorum?</div>
+  <div >
+    <div>
+      <slider />
+    </div>
+    <div class="text-center mx-5 my-5">
+      <h1> Duyurular</h1>
+      <card />
+    </div>
+    <div >
+      <infoCard/>
+    </div>
+
+  </div>
 </template>
+<style>
+
+</style>
