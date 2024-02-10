@@ -12,8 +12,8 @@ import slider4 from '@/assets/slider4.jpg'
 
 </script>
 <template>
-    <v-carousel height="800" cycle show-arrows="hover" touch >
-      <v-carousel-item v-for="(item, i) in items" :key="i" :src="item" cover  >
+    <v-carousel cycle show-arrows="hover" touch class="bg-black">
+      <v-carousel-item v-for="(item, i) in items" :key="i" :src="item"   >
       </v-carousel-item>
     </v-carousel>
 </template>

@@ -2,6 +2,8 @@
 import slider from '@/components/slider.vue';
 import card from '@/components/card.vue';
 import infoCard from '@/components/infoCard.vue';
+import successTab from '@/components/successTab.vue';
+import activity from '@/components/activity.vue';
 </script>
 
 <template>
@@ -15,6 +17,13 @@ import infoCard from '@/components/infoCard.vue';
     </div>
     <div >
       <infoCard/>
+    </div>
+    <div class="mt-10">
+      <successTab/>
+    </div>
+    <div class="mt-10">
+      <h1 class="text-center">Etkinliklerimiz</h1>
+      <activity />
     </div>
 
   </div>
