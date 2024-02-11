@@ -1,26 +1,26 @@
-<script setup lang="ts">
-import { ref } from "vue";
+<template>
+  <v-dialog :model="props.dialog" activator="parent" width="auto">
+    <v-card
+    class="mx-auto"
+    height="auto"
+    width="auto"
+    theme="dark">
+    <v-img
+        class="bg-black w-100"
+        min-width="400"
+        :aspect-ratio="1"
+        :src=props.image
+      ></v-img>
+    </v-card>
+  </v-dialog>
+</template>
 
-const dialog = ref(false)
+<script setup lang="ts">
+import {  defineProps } from 'vue';
+const props = defineProps({
+  dialog: Boolean,
+  image: String,
+});
+
 
 </script>
-
-<template>
-  <div class="text-center">
-
-
-    <v-dialog
-      v-model="dialog"
-      width="auto"
-    >
-      <v-card>
-        <v-card-text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </v-card-text>
-        <v-card-actions>
-          <v-btn color="primary" block @click="dialog = false">Close Dialog</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-  </div>
-</template>

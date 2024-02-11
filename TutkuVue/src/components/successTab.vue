@@ -11,20 +11,16 @@
         <v-container fluid>
           <v-row justify="center">
             <v-col  v-for="(item, i) in windowItem" :key="i"  md="4" s="12" class="text-center card-avarege" >
-              <VCard  :width="350" min-height="380">
+              <VCard @click="toggleDialog" :width="350" min-height="380">
                 <v-img  :src="item.image" aspect-ratio="1" cover></v-img>
                 <v-card-text class="text-h6">{{ item.text }}</v-card-text>
+                <DialogComponent :dialog="dialog" :image="item.image" />
               </VCard>
-
             </v-col>
           </v-row>
         </v-container>
       </v-window-item>
     </v-window>
-    <div class="text-center">
-    <v-btn color="primary" @click="toggleDialog">Open Dialog</v-btn>
-    <DialogComponent :dialog="dialog" @toggleDialog="toggleDialog" />
-  </div>
   </v-card>
 
 </template>
@@ -34,9 +30,11 @@ import { ref } from "vue";
 import DialogComponent from "@/components/dialog.vue";
 
 const dialog = ref(false);
+
 const toggleDialog = () => {
   dialog.value = !dialog.value;
 };
+
 const tab = ref(null);
 const items = [
   [

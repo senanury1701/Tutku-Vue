@@ -17,8 +17,8 @@
           </v-list-item>
         </div>
         <div class=" me-lg-16 d-none d-sm-flex">
-          <v-btn variant="text" icon="mdi-instagram"></v-btn>
-          <v-btn variant="text" icon="mdi-whatsapp"></v-btn>
+          <v-btn variant="text" @click="openInstagram" icon="mdi-instagram"></v-btn>
+          <v-btn variant="text" @click="openWhatsApp" icon="mdi-whatsapp"></v-btn>
         </div>
 
       <v-app-bar-nav-icon class="d-md-flex  d-lg-none " @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -32,12 +32,12 @@
             </v-list-item-content>
       </v-list-item>
       <div class="d-flex d-sm-none " style="position: absolute; bottom: 30px;">
-          <v-btn  class="mx-5" :size="50" variant="flat">
-            <v-icon size="40">mdi-instagram</v-icon>
-          </v-btn>
-          <v-btn  :size="50" variant="flat" >
-            <v-icon size="40">mdi-whatsapp</v-icon>
-          </v-btn>
+        <v-btn class="mx-5" :size="50" variant="flat" @click="openInstagram">
+          <v-icon size="40">mdi-instagram</v-icon>
+        </v-btn>
+        <v-btn :size="50" variant="flat" @click="openWhatsApp">
+          <v-icon size="40">mdi-whatsapp</v-icon>
+        </v-btn>
       </div>
     </v-navigation-drawer>
 
@@ -52,7 +52,13 @@ const items= [
         { title: 'Hakkımızda', link: '/about' },
         { title: 'İletişim', link: '/content' },
       ]
+const openInstagram = () => {
+  window.open('https://www.instagram.com/tutkugskvoleybol/', '_blank');
+};
 
+const openWhatsApp = () => {
+  window.open('https://wa.me/05384431217', '_blank');
+};
 </script>
 
 <style scoped>
