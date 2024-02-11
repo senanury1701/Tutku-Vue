@@ -18,7 +18,7 @@
     </v-img>
     <VContainer class="container" >
       <p>Tutku Gençlik Spor Kulübü olarak, topluma faydalı bireyler yetiştirmek ve Türk voleybolunu gelecekteki yıldızlarıyla güçlendirmek amacıyla kararlılıkla çalışmalarımıza devam ediyoruz. Eğer siz de voleybolun heyecanına kapıldıysanız ve yeteneklerinizi en üst seviyeye çıkarmak istiyorsanız, Tutku Gençlik Spor Kulübü Voleybol Okulu'na katılma fırsatını kaçırmayın!</p>
-      <v-row justify="center" class="my-3">
+      <v-row justify="center" class="my-5">
         <v-btn color="success" class="btn w-50" href="/content">Iletisim icin</v-btn>
       </v-row>
       <h3 class="my-3"> Tutku Gençlik Spor Kulübü Voleybol Okulları: Spor ve Başarıya Adım Atın!</h3>

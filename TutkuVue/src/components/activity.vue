@@ -1,14 +1,15 @@
 <template>
   <v-carousel
-
     cycle
     :show-arrows="false"
     class="bg-black"
+
   >
   <v-carousel-item
       v-for="(slide,i) in slides"
       :key="i"
       :src="slide.image"
+      
       cover
       gradient="to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3)"
     ></v-carousel-item>
