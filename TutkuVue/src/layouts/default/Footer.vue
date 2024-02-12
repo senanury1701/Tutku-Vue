@@ -3,7 +3,7 @@
     class=" d-flex flex-column"
   >
 
-  <div class="d-sm-block d-md-flex">
+  <div class="d-block d-sm-flex">
     <div>
       <VList>
         <VListItem><h3>Bilgiler</h3></VListItem>

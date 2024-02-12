@@ -1,7 +1,7 @@
 <template>
-  <VCol >
+  <VCol>
     <VRow class="mx-lg-10">
-      <VCol  v-for="item in items" :key="item">
+      <VCol  v-for="(item,i) in items" :key="i">
         <v-card
           :to="item.route"
           :href="item.link"

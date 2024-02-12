@@ -16,10 +16,10 @@
         </v-row>
       </v-container>
     </v-img>
-    <VContainer class="container" >
+    <VContainer class="mx-auto" style="max-width: 1200px;">
       <p>Tutku Gençlik Spor Kulübü olarak, topluma faydalı bireyler yetiştirmek ve Türk voleybolunu gelecekteki yıldızlarıyla güçlendirmek amacıyla kararlılıkla çalışmalarımıza devam ediyoruz. Eğer siz de voleybolun heyecanına kapıldıysanız ve yeteneklerinizi en üst seviyeye çıkarmak istiyorsanız, Tutku Gençlik Spor Kulübü Voleybol Okulu'na katılma fırsatını kaçırmayın!</p>
       <v-row justify="center" class="my-5">
-        <v-btn color="success" class="btn w-50" href="/content">Iletisim icin</v-btn>
+        <v-btn color="success" class="btn w-50" to="/content">Iletisim icin</v-btn>
       </v-row>
       <h3 class="my-3"> Tutku Gençlik Spor Kulübü Voleybol Okulları: Spor ve Başarıya Adım Atın!</h3>
       <p>Tutku Gençlik Spor Kulübü olarak, Türk voleybolunun yıldızlarını yetiştirmek ve topluma katkı sağlamak için gayretle çalışıyoruz. Voleybol sevgisine sahipseniz ve yeteneklerinizi en üst düzeye çıkarmak istiyorsanız, Tutku Gençlik Spor Kulübü Voleybol Okulları'na katılmak için en doğru yerdesiniz!</p>
@@ -40,13 +40,13 @@
       </v-btn>
     </v-row>
     </VContainer>
-    <VContainer>
+    <VContainer style="max-width: 1200px;">
       <div id="courseGallery">
         <h1 class="text-center my-5">Voleybol Okulu Galerisi</h1>
         <v-row>
           <v-col
             v-for="item in items"
-            :key="item"
+            :key="item.image"
             class="d-flex child-flex"
             cols="6"
             sm="4"
@@ -85,24 +85,36 @@
 </template>
 
 <script setup lang="ts">
-const scrollToTarget = (target) => {
+import yazokulu1 from '@/assets/yazokulu1.jpg'
+import yazokulu2 from '@/assets/yazokulu2.jpg'
+import yazokulu3 from '@/assets/yazokulu3.jpg'
+import yazokulu4 from '@/assets/yazokulu4.jpg'
+import yazokulu5 from '@/assets/yazokulug5.jpg'
+import yazokulu6 from '@/assets/yazokulug6.jpg'
+import yazokulu7 from '@/assets/yazokulug7.jpg'
+import yazokulu8 from '@/assets/yazokulug8.jpg'
+import yazokulu9 from '@/assets/yazokulug9.jpg'
+import yazokulu10 from '@/assets/yazokulug10.jpg'
+import yazokulu11 from '@/assets/yazokulug11.jpg'
+import yazokulu12 from '@/assets/yazokulug12.jpg'
+const scrollToTarget = (target:any) => {
   const targetElement = document.querySelector(target);
   if (targetElement) {
     targetElement.scrollIntoView({ behavior: 'smooth' });
   }
 };
 const items = [
-  {image:'/src/assets/yazokulu1.jpg'},
-  {image:'/src/assets/yazokulu2.JPG'},
-  {image:'/src/assets/yazokulu3.jpg'},
-  {image:'/src/assets/yazokulu4.jpg'},
-  {image:'/src/assets/yazokulug5.JPG'},
-  {image:'/src/assets/yazokulug6.jpg'},
-  {image:'/src/assets/yazokulug7.jpg'},
-  {image:'/src/assets/yazokulug8.JPG'},
-  {image:'/src/assets/yazokulug9.JPG'},
-  {image:'/src/assets/yazokulug10.jpg'},
-  {image:'/src/assets/yazokulug11.JPG'},
-  {image:'/src/assets/yazokulug12.JPG'},
+  {image:yazokulu1},
+  {image:yazokulu2},
+  {image:yazokulu3},
+  {image:yazokulu4},
+  {image:yazokulu5},
+  {image:yazokulu6},
+  {image:yazokulu7},
+  {image:yazokulu8},
+  {image:yazokulu9},
+  {image:yazokulu10},
+  {image:yazokulu11},
+  {image:yazokulu12},
 ]
 </script>

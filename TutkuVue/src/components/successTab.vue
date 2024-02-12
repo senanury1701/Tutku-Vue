@@ -28,6 +28,16 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import DialogComponent from "@/components/dialog.vue";
+import image341 from '@/assets/YildizTakimi2.jpeg'
+import image342 from '@/assets/MidiTakim.jpeg'
+import image343 from '@/assets/KucukTakim.jpeg'
+
+import image231 from '@/assets/tutkuYildiz.png'
+import image232 from '@/assets/slider2.jpg'
+import image233 from '@/assets/slider4.jpg'
+
+import image121 from '@/assets/slider3.jpg'
+import image122 from '@/assets/2021-yildiz.jpeg'
 
 const dialog = ref(false);
 
@@ -38,18 +48,18 @@ const toggleDialog = () => {
 const tab = ref(null);
 const items = [
   [
-    { text: '2023-2024 Sezonu Yıldız Kızlar ', image: '/src/assets/YildizTakimi2.jpeg' },
-    { text: '2023-2024 Sezonu Midi Kızlar ', image: '/src/assets/MidiTakim.jpeg' },
-    { text: '2023-2024 Sezonu Küçük Kızlar ', image: '/src/assets/KucukTakim.jpeg' },
+    { text: '2023-2024 Sezonu Yıldız Kızlar ', image: image341 },
+    { text: '2023-2024 Sezonu Midi Kızlar ', image: image342 },
+    { text: '2023-2024 Sezonu Küçük Kızlar ', image: image343 },
   ],
   [
-    { text: '2022-2023 Sezonu Yıldız Kızlar Denizli 4.lüğü', image: '/src/assets/tutkuYildiz.png' },
-    { text: '2022-2023 Sezonu Genç Kızlar Denizli 2.liği', image: '/src/assets/slider2.jpg' },
-    { text: '2022-2023 Sezonu TVF Kadınlar 2. Ligi', image: '/src/assets/slider4.jpg' },
+    { text: '2022-2023 Sezonu Yıldız Kızlar Denizli 4.lüğü', image: image231  },
+    { text: '2022-2023 Sezonu Genç Kızlar Denizli 2.liği', image: image232 },
+    { text: '2022-2023 Sezonu TVF Kadınlar 2. Ligi', image: image233 },
   ],
   [
-    { text: '2021-2022 Sezonu Bölgesel Lig Denizli Şampiyonluğu', image: '/src/assets/slider3.jpg' },
-    { text: '2021-2022 Sezonu Yıldız Kızlar Denizli 4.lüğü', image: '/src/assets/2021-yildiz.jpeg' },
+    { text: '2021-2022 Sezonu Bölgesel Lig Denizli Şampiyonluğu', image: image121 },
+    { text: '2021-2022 Sezonu Yıldız Kızlar Denizli 4.lüğü', image: image122 },
   ],
 ];
 </script>

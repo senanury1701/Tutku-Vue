@@ -17,7 +17,7 @@
       ></v-divider>
       <v-card-text class="text-white text-lg-h5 text-h6 py-5">Türk voleybolunu şekillendirmek ve topluma katkı sağlamak için çalışıyoruz. <br><br> Sizin de voleybol TUTKU'nuz varsa, hemen bize katılın!</v-card-text>
       <v-spacer />
-      <VBtn color="success" href="/course"  >Daha Fazla Bilgi</VBtn>
+      <VBtn color="success" to="/course"  >Daha Fazla Bilgi</VBtn>
     </v-img>
 
   </v-card>

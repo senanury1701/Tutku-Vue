@@ -1,6 +1,6 @@
 <template>
   <VContainer  class="align-items-center justify-content-center ">
-    <div>
+    <div class="mx-auto" style="max-width: 1200px;">
       <h1 class="text-center my-2">Kulübümüz </h1>
       <p> Tutku Gençlik Spor Kulübü, 2020 yılında Denizli'de köklü bir geleceğin temellerini atmıştır. Misyonumuz, genç yetenekleri keşfetmek, onları geliştirmek ve Türk voleybolunun parlak yıldızlarını yetiştirmektir. Türkiye Voleybol Fedarasyonu Bölgesel Ligi ile başlayan serüvenimiz namağlup Türkiye Şampiyonu olarak Kadınlar 2.ligine terfi ederek devam etti. Amacımız, her seviyede başarıyı yakalarken, sporun ve rekabetin ruhunu yaşatarak toplumumuza değer katmaktır.  <br><br>
       Tutku Gençlik Spor Kulübü olarak, geleceği şekillendiren gençlerin yanında duruyoruz. Vizyonumuz, genç sporcularımızın sadece voleybolda değil, hayatta da başarılı bireyler olarak yetişmelerine yardımcı olmaktır. Onları liderlik, disiplin ve takım çalışması gibi temel değerlerle donatıyoruz. Böylece, sporun gücü ile toplumumuzda olumlu bir değişim yaratmayı amaçlıyoruz.
@@ -17,7 +17,7 @@
     </div>
     <div class="mx-auto align-center">
       <h1 class="text-center my-3">Antrenörlerimiz</h1>
-      <VCard class="d-sm-flex flex-no-wrap justify-space-between my-5 " max-width="1200">
+      <VCard class="d-sm-flex flex-no-wrap justify-space-between my-5 mx-auto" max-width="1200">
         <div class="text-center">
           <v-avatar
             class="ma-3"
@@ -40,7 +40,7 @@
 
       </VCard>
 
-      <VCard class="d-sm-flex flex-no-wrap justify-space-between my-5" max-width="1200">
+      <VCard class="d-sm-flex flex-no-wrap justify-space-between my-5 mx-auto" max-width="1200">
 
         <div>
           <VCardTitle>İzzet Şener KARA</VCardTitle>
@@ -63,7 +63,7 @@
 
       </VCard>
 
-      <VCard class="d-sm-flex flex-no-wrap justify-space-between my-5" max-width="1200">
+      <VCard class="d-sm-flex flex-no-wrap justify-space-between my-5 mx-auto" max-width="1200">
         <div class="text-center">
           <v-avatar
             class="ma-3"
@@ -86,7 +86,7 @@
 
       </VCard>
 
-      <VCard class="d-sm-flex flex-no-wrap justify-space-between my-5" max-width="1200">
+      <VCard class="d-sm-flex flex-no-wrap justify-space-between my-5 mx-auto" max-width="1200">
 
         <div>
           <VCardTitle>Bayram Söyleyici</VCardTitle>
